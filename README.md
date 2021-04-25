@@ -28,7 +28,7 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 ## Endpoints
 
-###User
+### User
 
 - Get all users: GET /api/users
 - Create a user: POST /api/users
@@ -38,7 +38,7 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 - Add a friend: PUT /api/users/:userId/friends/:friendId
 - Delete a friend: DELETE /api/users/:userId/friends/:friendId
 
-###Thought
+### Thought
 
 - Get all thoughts: GET /api/thoughts
 - Create a thought: POST /api/thoughts
@@ -50,6 +50,8 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 
 ## Demo
 Here is the link for the demonstration video:
+
 Video of GET, POST, PUT and DELETE routes for Users and Thoughts tested in insomnia :https://drive.google.com/file/d/1IV4JhVzvlzuvFJJCqOfS7FKnXRGfrEUj/view
+
 Video of  POST and DELETE routes for reactions and friends:https://drive.google.com/file/d/1V3GaMLwnBin4wKOIRkZuPvnQ3FFeUMFp/view
 
