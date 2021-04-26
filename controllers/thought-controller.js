@@ -40,12 +40,7 @@ const thoughtController = {
   },
 
   // POST /api/thoughts
-  // expected body:
-  // {
-  //     "thoughtText": "foo",
-  //     "username": "bar",  // should be a username that corresponds to a User instance
-  //     "userId": "baz"  // should be a userId that corresponds to the same User instance as username
-  // }
+  
   createThought({ body }, res) {
     Thought.create(body)
       .then((dbThoughtData) => {
@@ -67,12 +62,7 @@ const thoughtController = {
   },
 
   // PUT /api/thoughts/:id
-  // expected body should include at least one of the following attributes:
-  // {
-  //     "thoughtText": "foo",
-  //     "username": "bar",  // should be a username that corresponds to a User instance
-  //     "userId": "baz"  // should be a userId that corresponds to the same User instance as username
-  // }
+  
   updateThought({ params, body }, res) {
     Thought.findOneAndUpdate({ _id: params.id }, body, { new: true })
       .then((dbThoughtData) => {
